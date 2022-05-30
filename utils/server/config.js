@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
 
-console.log("db url is: ", process.env.DB_URL);
+export const DBConnection = () => {
+    mongoose.connect("mongodb+srv://isaac:Mugisha12!@cluster0.sj1io.mongodb.net/?retryWrites=true&w=majority", {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    }).then(() => {
+        console.log('DB Connection Succeeded')
+    }).catch((err) => {
+        console.log('Connection Failed')
+    })
+}
 
-mongoose.connect(process.env.DB_URL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(()=>{
-    console.log('DB Connection Succeeded')
-}).catch((err)=>{
-    console.log('Connection Failed')
-})

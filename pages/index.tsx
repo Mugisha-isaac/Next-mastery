@@ -1,4 +1,4 @@
-import IndexPage from './page-components/index/index'
+import IndexPage from "./page-components/Index/index"
 
 export default function Home() {
   return (

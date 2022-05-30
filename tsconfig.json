@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/_app.jsx", "pages/page-components/Auth/Signup.jsx", "utils/fetcher.js"  ],
+, "pages/_app.jsx", "pages/page-components/Auth/Signup.jsx", "utils/fetcher.js", "pages/index.jsx", "pages/page-components/Index/index.jsx", "pages/page-components/Index/Hero.jsx"  ],
   "exclude": [
     "node_modules"
   ]

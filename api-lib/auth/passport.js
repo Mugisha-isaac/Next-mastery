@@ -8,7 +8,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser(( id, done) => {
-  findUserForAuth(id).then((user)=>done(null,user),(err)=>done(err))
+  findUserForAuth(id).then((user)=>done(null,user),(err)=>done(err));
 });
 
 passport.use(
